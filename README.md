@@ -16,7 +16,7 @@ Binary [fst](https://www.fstpackage.org/) format files for the efficient storage
 ## Boundaries
 Binary [rds](https://www.rdocumentation.org/packages/base/versions/3.5.3/topics/readRDS) format files for the quick retrieval of boundaries in [sp](https://github.com/edzer/sp/) format at 20% simplification (using [rmapshaper](https://github.com/ateucher/rmapshaper)):
   - `OA` Output Areas, as of Census 2011 (codes starting in: `E00` for England, `W00` for Wales, `S00` for Scotland, `N00` for N.Ireland)
-  - `LSOA` Lower Level Super Output Areas, as of Census 2011 -- codes starting in: `E01`, `W01`, `S01`, `N01`
+  - `LSOA` Lower Level Super Output Areas, as of Census 2011 --- codes starting in: `E01`, `W01`, `S01`, `N01`
   - `MSOA` Middle Level Super Output Areas, as of Census 2011 -- codes starting in: `E02`, `W02`, `S02`; not for Northern Ireland
   - `LAD` Local Authority District, as of December 2018 --  (UA-E06/W06, LAD-E07, MD-E08, LB-E09, CA-S12, DCA-N09)
   - `CTY` output areas, as of --
