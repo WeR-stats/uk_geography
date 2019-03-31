@@ -26,8 +26,8 @@ Binary [rds](https://www.rdocumentation.org/packages/base/versions/3.5.3/topics/
 
 The `OA` boundaries have been built by union of the 
   - [England and Wales](http://geoportal.statistics.gov.uk/datasets?q=COA%20Boundaries&sort_by=name)
-  - [Scotland](ttp://www.nrscotland.gov.uk/statistics-and-data/geography/our-products/census-datasets/2011-census/2011-boundaries)
-  - [Northern Ireland](ttps://www.nisra.gov.uk/publications/small-area-boundaries-gis-format)
+  - [Scotland](http://www.nrscotland.gov.uk/statistics-and-data/geography/our-products/census-datasets/2011-census/2011-boundaries)
+  - [Northern Ireland](https://www.nisra.gov.uk/publications/small-area-boundaries-gis-format)
 
 The process can be found [here](https://github.com/lvalnegri/projects-geography_uk/blob/master/51-create_uk_boundaries.R)
  
