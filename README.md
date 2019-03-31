@@ -24,10 +24,11 @@ Binary [rds](https://www.rdocumentation.org/packages/base/versions/3.5.3/topics/
   - `WARD`, as of
   - `CCG`, as of
 
-The `OA` boundaries have been built by union of the 
+The `OA` boundaries have been built by union of the three following [shapefiles](https://en.wikipedia.org/wiki/Shapefile):
   - [England and Wales](http://geoportal.statistics.gov.uk/datasets?q=COA%20Boundaries&sort_by=name)
-  - [Scotland](http://www.nrscotland.gov.uk/statistics-and-data/geography/our-products/census-datasets/2011-census/2011-boundaries)
-  - [Northern Ireland](https://www.nisra.gov.uk/publications/small-area-boundaries-gis-format)
+  - [Scotland](http://www.nrscotland.gov.uk/statistics-and-data/geography/our-products/census-datasets/2011-census/2011-boundaries) as 
+  - [Northern Ireland](https://www.nisra.gov.uk/publications/small-area-boundaries-gis-format) as 
+Their projected coordinate system -- [British National Grid, OSGB_1936](http://spatialreference.org/ref/epsg/osgb-1936-british-national-grid/) for England, Wales, and Scotland; [Irish Grid, GCS_TM65](http://spatialreference.org/ref/epsg/29902/) for Northern Ireland -- have been all transformed in the unprojected geographic *lat/long* defined by the [WGS84](http://spatialreference.org/ref/epsg/4326/), tipycally used by the [GPS satellite navigation system]().
 
 The process can be found [here](https://github.com/lvalnegri/projects-geography_uk/blob/master/51-create_uk_boundaries.R)
  
