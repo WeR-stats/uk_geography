@@ -3,7 +3,7 @@
 Datasets and boundaries used in various workshops and shiny apps of the [WeR meetup](https://www.meetup.com/WeR-stats/)
 
 ## Datasets
-Binary [fst](https://cran.r-project.org/package=fst) format files for the efficient storage and quick retrieval of [data.table]() datasets:
+Binary [fst](https://www.fstpackage.org/) format files for the efficient storage and quick retrieval of [data.table](https://github.com/Rdatatable/data.table) datasets:
 
   - `postcodes`: lookup table to connect each live or terminated postcode in the UK to one of the two lowest level *Census Area*:
     - [Output Areas (OA)](https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeography#output-area-oa)
@@ -14,17 +14,17 @@ Binary [fst](https://cran.r-project.org/package=fst) format files for the effici
   - `locations`: names and centroids related to higher level areas than output area and workplace zone. It's been built using some of the csv files contained in the subfolder `Documents` included in the [ONS Postcode Directory (February 2019)](https://geoportal.statistics.gov.uk/items/ons-postcode-directory-february-2019) distribution. The process can be found [here]().
   
 ## Boundaries
-Binary [rds](https://www.rdocumentation.org/packages/base/versions/3.5.3/topics/readRDS) format files for boundaries in [sp]() format at 20% simplification (using [rmapshaper]())
-  - `OA` output areas, as of Census 2011
-  - `LSOA` output areas, as of Census 2011
-  - `MSOA` output areas, as of Census 2011
-  - `LAD` output areas, as of 
-  - `CTY` output areas, as of (this 
-  - `RGN` output areas, as of (this file also contains as pseudo regions the three countries)
+Binary [rds](https://www.rdocumentation.org/packages/base/versions/3.5.3/topics/readRDS) format files for the quick retrieval of boundaries in [sp](https://github.com/edzer/sp/) format at 20% simplification (using [rmapshaper](https://github.com/ateucher/rmapshaper)):
+  - `OA` Output Areas, as of Census 2011 (codes starting in: `E00` for England, `W00` for Wales, `S00` for Scotland, `N00` for N.Ireland)
+  - `LSOA` Lower Level Super Output Areas, as of Census 2011 -- codes starting in: `E01`, `W01`, `S01`, `N01`
+  - `MSOA` Middle Level Super Output Areas, as of Census 2011 -- codes starting in: `E02`, `W02`, `S02`; not for Northern Ireland
+  - `LAD` Local Authority District, as of December 2018 --  (UA-E06/W06, LAD-E07, MD-E08, LB-E09, CA-S12, DCA-N09)
+  - `CTY` output areas, as of --
+  - `RGN` output areas, as of December 2010 (this file also contains as pseudo regions the three countries)
   - `CTRY`
-  - `WPZ`, as of Census 2011
-  - `WARD`, as of
-  - `CCG`, as of
+  - `WPZ`, as of Census 2011 -- 
+  - `WARD`, as of December 2018 -- 
+  - `CCG`, as of April 2018 -- 
 
 The `OA` boundaries have been built by union of the three following [shapefiles](https://en.wikipedia.org/wiki/Shapefile):
   - [England and Wales](http://geoportal.statistics.gov.uk/datasets?q=COA%20Boundaries&sort_by=name)
