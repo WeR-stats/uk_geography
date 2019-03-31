@@ -39,7 +39,7 @@ The `WPZ` boundaries have been downloaded as a unique shapefile directly from th
 All other boundaries have been built upon the OA boundaries by aggregations, using the `output_areas`lookup file. The process can be found [here]()
 
 
-### Credits
+## Credits
 
   - Contains [National Statistics data](https://www.ons.gov.uk/peoplepopulationandcommunity/elections/electoralregistration)
   - Contains [OS data](http://geoportal.statistics.gov.uk/)
