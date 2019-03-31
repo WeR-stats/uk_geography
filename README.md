@@ -34,12 +34,13 @@ Binary [rds](https://www.rdocumentation.org/packages/base/versions/3.5.3/topics/
     - [Scotland](http://www.nrscotland.gov.uk/statistics-and-data/geography/our-products/census-datasets/2011-census/2011-boundaries) as 
     - [Northern Ireland](https://www.nisra.gov.uk/publications/small-area-boundaries-gis-format) as 
     Their projected coordinate system -- [British National Grid, OSGB_1936](http://spatialreference.org/ref/epsg/osgb-1936-british-national-grid/) for England, Wales, and Scotland; [Irish Grid, GCS_TM65](http://spatialreference.org/ref/epsg/29902/) for Northern Ireland -- have been all transformed in the unprojected geographic *lat/long* defined by the [WGS84](http://spatialreference.org/ref/epsg/4326/), tipycally used by the [GPS satellite navigation system]().
+    
     The process can be found [here](https://github.com/lvalnegri/projects-geography_uk/blob/master/51-create_uk_boundaries.R)
     
-  - The `WPZ` boundaries have been downloaded as a unique shapefile directly from the [CDRC](*https://data.cdrc.ac.uk/dataset/cowz-uk) website
+  - The `WPZ` boundaries have been downloaded as a unique shapefile directly from the [CDRC](https://data.cdrc.ac.uk/dataset/cowz-uk) website
     The process can be found [here](https://github.com/lvalnegri/projects-geography_uk/blob/master/52-prepare_wpz_boundaries.R)
 
-  - All other boundaries have been built upon the OA boundaries by aggregations, using the `output_areas`lookup file. 
+  - All other boundaries have been built upon the `OA` boundaries by aggregations, using the above `output_areas`lookup file. 
     The process can be found [here](https://github.com/lvalnegri/projects-geography_uk/blob/master/54-create_parents_boundaries.R)
 
 
