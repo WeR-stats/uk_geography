@@ -1,13 +1,15 @@
 # UK Geography
 
-Datasets and boundaries used in various workshops and shiny apps.
+Datasets and boundaries used in various workshops and shiny apps of the [WeR meetup](https://www.meetup.com/WeR-stats/)
 
 ## Datasets
 
   - postcodes: lookup table to connect postcodes to one of the lowest level areas:
     - [Output Areas (OA)](https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeography#output-area-oa)
     - [Workplace Zones (WZ)](https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeography#workplace-zone-wz)
+    It's been built using the `ONSPD_FEB_2019_UK` csv file included in the [ONS Postcode Directory (February 2019)](https://geoportal.statistics.gov.uk/items/ons-postcode-directory-february-2019) distribution.
   - output_areas: lookup table to connect every output area in the UK to some of its higher level hierarchy
+    It's been built using mainly the csv files contained in the subfolder `documents` included in the [ONS Postcode Directory (February 2019)](https://geoportal.statistics.gov.uk/items/ons-postcode-directory-february-2019) distribution.
   - workplace_zones: lookup table to connect every workplace zone in the UK to some of its higher level hierarchy
   - locations: names and centroids related to higher level areas than output area and workplace zone
   
@@ -32,8 +34,9 @@ Their projected coordinate system -- [British National Grid, OSGB_1936](http://s
 
 The process can be found [here](https://github.com/lvalnegri/projects-geography_uk/blob/master/51-create_uk_boundaries.R)
  
-The `WPZ` boundaries have been downloaded directly from the website
-All other boundaries have been built upon OA by aggregations, using the `output_areas`lookup file. The process can be found [here]()
+The `WPZ` boundaries have been downloaded as a unique shapefile directly from the [CDRC](*https://data.cdrc.ac.uk/dataset/cowz-uk) website
+
+All other boundaries have been built upon the OA boundaries by aggregations, using the `output_areas`lookup file. The process can be found [here]()
 
 
   - Contains [National Statistics data](https://www.ons.gov.uk/peoplepopulationandcommunity/elections/electoralregistration)
