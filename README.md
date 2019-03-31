@@ -3,15 +3,15 @@
 Datasets and boundaries used in various workshops and shiny apps of the [WeR meetup](https://www.meetup.com/WeR-stats/)
 
 ## Datasets
+Binary [fst](https://cran.r-project.org/package=fst) format files for the efficient storage and quick retrieval of [data.table]() datasets:
 
-  - `postcodes`: lookup table to connect postcodes to one of the lowest level areas:
+  - `postcodes`: lookup table to connect each live or terminated postcode in the UK to one of the two lowest level *Census Area*:
     - [Output Areas (OA)](https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeography#output-area-oa)
     - [Workplace Zones (WZ)](https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeography#workplace-zone-wz)
-    It's been built using the `ONSPD_FEB_2019_UK` csv file included in the [ONS Postcode Directory (February 2019)](https://geoportal.statistics.gov.uk/items/ons-postcode-directory-february-2019) distribution.
-  - `output_areas`: lookup table to connect every output area in the UK to some of its higher level hierarchy
-    It's been built using mainly the csv files contained in the subfolder `documents` included in the [ONS Postcode Directory (February 2019)](https://geoportal.statistics.gov.uk/items/ons-postcode-directory-february-2019) distribution.
-  - `workplace_zones`: lookup table to connect every workplace zone in the UK to some of its higher level hierarchy
-  - `locations`: names and centroids related to higher level areas than output area and workplace zone
+    It's been built using the `ONSPD_FEB_2019_UK` csv file included in the [ONS Postcode Directory (February 2019)](https://geoportal.statistics.gov.uk/items/ons-postcode-directory-february-2019) distribution. The process can be found [here]().
+  - `output_areas`: lookup table to connect every output area in the UK (count of 232,296) to some of its higher level hierarchy. It's been built mainly using lookup tables from the ONS website, but some of the connections have used an aggregation process starting from the above postcode file. The process can be found [here]().
+  - `workplace_zones`: lookup table to connect every workplace zone in the UK to some of its higher level hierarchy.  The process can be found [here]().
+  - `locations`: names and centroids related to higher level areas than output area and workplace zone. It's been built using some of the csv files contained in the subfolder `Documents` included in the [ONS Postcode Directory (February 2019)](https://geoportal.statistics.gov.uk/items/ons-postcode-directory-february-2019) distribution. The process can be found [here]().
   
 ## Boundaries
 Binary [rds](https://www.rdocumentation.org/packages/base/versions/3.5.3/topics/readRDS) format files for boundaries in [sp]() format at 20% simplification (using [rmapshaper]())
