@@ -4,14 +4,14 @@ Datasets and boundaries used in various workshops and shiny apps of the [WeR mee
 
 ## Datasets
 
-  - postcodes: lookup table to connect postcodes to one of the lowest level areas:
+  - `postcodes`: lookup table to connect postcodes to one of the lowest level areas:
     - [Output Areas (OA)](https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeography#output-area-oa)
     - [Workplace Zones (WZ)](https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeography#workplace-zone-wz)
     It's been built using the `ONSPD_FEB_2019_UK` csv file included in the [ONS Postcode Directory (February 2019)](https://geoportal.statistics.gov.uk/items/ons-postcode-directory-february-2019) distribution.
-  - output_areas: lookup table to connect every output area in the UK to some of its higher level hierarchy
+  - `output_areas`: lookup table to connect every output area in the UK to some of its higher level hierarchy
     It's been built using mainly the csv files contained in the subfolder `documents` included in the [ONS Postcode Directory (February 2019)](https://geoportal.statistics.gov.uk/items/ons-postcode-directory-february-2019) distribution.
-  - workplace_zones: lookup table to connect every workplace zone in the UK to some of its higher level hierarchy
-  - locations: names and centroids related to higher level areas than output area and workplace zone
+  - `workplace_zones`: lookup table to connect every workplace zone in the UK to some of its higher level hierarchy
+  - `locations`: names and centroids related to higher level areas than output area and workplace zone
   
 ## Boundaries
 Binary [rds](https://www.rdocumentation.org/packages/base/versions/3.5.3/topics/readRDS) format files for boundaries in [sp]() format at 20% simplification (using [rmapshaper]())
@@ -38,6 +38,8 @@ The `WPZ` boundaries have been downloaded as a unique shapefile directly from th
 
 All other boundaries have been built upon the OA boundaries by aggregations, using the `output_areas`lookup file. The process can be found [here]()
 
+
+### Credits
 
   - Contains [National Statistics data](https://www.ons.gov.uk/peoplepopulationandcommunity/elections/electoralregistration)
   - Contains [OS data](http://geoportal.statistics.gov.uk/)
